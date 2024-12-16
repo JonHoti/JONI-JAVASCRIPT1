@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <script>
+            //For Loop i ka gjithsejt 3 statement, ku te gjithe i caktojme brenda kllapave te For.
+                
+                //var x;	//Para for vetem e deklarojme variablen
+                for(x=0; x<=5; x++)	//Duhet te kemi kujdes tek pikepresja.
+                {
+                    document.write(x+'<br>');
+                }
+    
+                
+                var y = 0; //Variabla mund te inicializohet edhe ne fillim, mirepo duhet ti caktohet vendi ne For
+                for (;y<=5;y++) 
+                {
+                    document.write(y)
+                }
+            </script>
+            <script>
+                var x;
+                for(x=0;x<=5;)
+                {
+                    document.write('<br>'+x)
+                    x++;	//Mund te e caktojme edhe brenda loop incrementin.
+                }
+            </script>
+            
+            <p id='p1'style="color:red"></p>
+            <script>
+            //Menyra se si mund te e vendosim ne nje paragraf vleren totale te loop
+                var para =''; 
+    
+                for(x=0;x<=5;x++)
+                {
+                    para+=x+'<br>';
+                }
+                document.getElementById('p1').innerHTML=para;
+            </script>
+    
+            
+            <p id="p2"></p>
+            <script>
+            //Menyra se si mund te e perdorim loop per array
+                var vargu = ['Shkolla','Digjitale','Prizren'];
+                var y = vargu.length;
+                var z ='';
+                var a = vargu.sort();
+                for(x=0;x<y;x++)
+                {
+                    z+=vargu[x]+'<br>';
+                }
+                document.getElementById('p2').innerHTML = z;
+            </script>
+    
+    
+    
+            <script>
+                var x=0;
+                var y=0;
+                
+                for(i=0;i<=2;i++)
+                {
+                    x=i;
+                    switch(x)
+                    {
+                        case 0:
+                            y+=100;
+                            break;
+                        case 1:
+                            y+=10;
+                            break;
+            
+                        case 2:
+                            y+=1;
+                            break;
+                    }
+                }
+                document.write(y);
+                
+                
+                
+                
+                
+                
+                
+                //Nese nuk perdoret break prej case ku eshte i sakte ekzekutohen te gjithe case tjere deri ne case e fundit.
+            </script>   
+</body>
+</html>

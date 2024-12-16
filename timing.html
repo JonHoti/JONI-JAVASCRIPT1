@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Javascript BOM</p>
+    <p>Set Timeout</p>
+    <button onclick="setTimeout(fun,3000);">Kliko</button>
+    <script>
+        function fun()
+        {
+            alert("Hello");
+        }
+        setTimeout(fun,3000);
+    </script>
+    <p>Start and Stop</p>
+    <button onclick="myVar=sitTimeout(fun,3000)">Start</button>
+    <button onclick="clearTimeout(myVar)">Stop</button>
+
+    <p>Set Interval</p>
+    <p id="p1"></p>
+    <script>
+        var koha=setInterval(time,1000);
+        function time()
+        {
+            var ora=new Date();
+            document.getElementById('p1').innerHTML=ora.toLocaleTimeString();
+        }
+        document.write(new Date());
+    </script>
+    <button onclick="clearInterval(koha)">Stop time</button>
+</body>
+</html>
